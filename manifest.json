@@ -1,0 +1,14 @@
+  {
+    "name": "ViDaemon",
+    "version": "1.0",
+    "description": "Modifies the VidAngel UI to make it what everyone really wants",
+    "manifest_version": 2,
+    "content_scripts": [
+      {
+        "matches": ["https://*.vidangel.com/*"],
+        "js": [
+          "scripts/hide-paid.js"
+        ]
+      }
+    ]
+  }
